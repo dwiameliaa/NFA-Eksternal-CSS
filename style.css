@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 200px;
+    /* tinggi fix header */
+    overflow: hidden;
+    /* memotong kelebihan gambar */
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #696969;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar a {
+    padding: 14px 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    /* background-color: #1E90FF; */
+    color: white;
+}
+
+.row h2 {
+    text-align: center;
+}
+
+.column.side {
+    width: 20%;
+    text-align: justify;
+}
+
+.column.middle {
+    width: 60%;
+    text-align: justify;
+}
+
+.column {
+    float: left;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row:after {
+    /* membersihkan efek float dari elemen di dalam .row (div content) */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+        background-color: #2d3436; 
+        color: #dfe6e9;           
+        text-align: center;
+        padding: 2px 0;
+        font-size: 14px;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); 
+      }
+      
+.footer span {
+        font-weight: 600;
+        color: #74b9ff; 
+      }
